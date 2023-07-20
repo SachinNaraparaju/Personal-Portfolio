@@ -29,14 +29,14 @@ function darkToggle() {
     $("footer").addClass("dark");
     document.getElementById(
       "ham-dark-toggle"
-    ).innerHTML = `<img src="../assets/sun_icon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
+    ).innerHTML = `<img src="./assets/sun_icon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
     document.getElementById(
       "dark-toggle"
-    ).innerHTML = `<img src="../assets/sun_icon.png" alt="icon" class="icon hover-icon" style="height: 1.5rem">`;
-    // $('#profile').css("background-image", "url('../assets/cool-background_dark.png')");
+    ).innerHTML = `<img src="./assets/sun_icon.png" alt="icon" class="icon hover-icon" style="height: 1.5rem">`;
+    // $('#profile').css("background-image", "url('./assets/cool-background_dark.png')");
     // $("#profile").css(
     //   "background-image",
-    //   "url('../assets/dark-wallpaper.jpg')"
+    //   "url('./assets/dark-wallpaper.jpg')"
     // );
     darkMode = true;
   } else {
@@ -54,13 +54,13 @@ function darkToggle() {
     $("footer").removeClass("dark");
     document.getElementById(
       "ham-dark-toggle"
-    ).innerHTML = `<img src="../assets/moon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
+    ).innerHTML = `<img src="./assets/moon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
     document.getElementById(
       "dark-toggle"
-    ).innerHTML = `<img src="../assets/moon.png" alt="icon" class="icon hover-icon" style="height: 1.15rem">`;
+    ).innerHTML = `<img src="./assets/moon.png" alt="icon" class="icon hover-icon" style="height: 1.15rem">`;
     // $("#profile").css(
     //   "background-image",
-    //   "url('../assets/desktop-wallpaper-dark-ultra-minimalist.jpg')"
+    //   "url('./assets/desktop-wallpaper-dark-ultra-minimalist.jpg')"
     // );
     darkMode = false;
   }
