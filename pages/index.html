@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/program-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav" class="top-nav">
+      <div class="logo">
+        <img
+          src="../assets/SN-logo.png"
+          alt="icon"
+          class="icon hover-icon"
+          style="height: 2.5rem"
+        />
+        &lt;/&gt; SN
+      </div>
+      <div>
+        <div class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="dark-toggle" onclick="darkToggle()">
+            <img
+              src="../assets/moon.png"
+              alt="icon"
+              class="icon hover-icon"
+              style="height: 1.15rem"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" class="top-nav">
+      <div class="logo">
+        <img
+          src="../assets/program-icon.png"
+          alt="icon"
+          class="icon hover-icon"
+          style="height: 2.5rem"
+        />
+        SN
+      </div>
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars icon hover-icon" style="font-size: 28px;"></i>
+      </div>
+      <div class="menu-links">
+        <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><button id="ham-dark-toggle" onclick="darkToggle();toggleMenu();">
+          <img
+            src="../assets/moon.png"
+            alt="icon"
+            class="icon hover-icon"
+            style="height: 1.75rem"
+          />
+        </button></li>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section-pic-container">
+        <img src="../assets/Coding-bro.png" alt="John Doe profile Pic" />
+      </div> -->
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Sachin Naraparaju</h1>
+        <p class="section-text-p2">Full-Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('../assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <i
+            class="fa-brands fa-linkedin link-icon hover-icon"
+            onclick="location.href='https://linkedin.com/in/sachin-narap'"
+          ></i>
+          <!-- <img
+            src="../assets/linkedin.png"
+            alt="linkedinprofile"
+            class="icon hover-icon"
+            onclick="location.href='https://linkedin.com/in/sachin-narap'"
+          /> -->
+          <i
+            class="fa-brands fa-github link-icon hover-icon"
+            onclick="location.href='https://github.com/SachinNaraparaju'"
+          ></i>
+          <!-- <img
+            src="../assets/github.png"
+            alt="github"
+            class="icon hover-icon"
+            onclick="location.href='https://github.com/SachinNaraparaju'"
+          /> -->
+        </div>
+      </div>
+      <div class="icon-scroll"></div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img
+            src="../assets/Coding-bro.png"
+            alt="profile pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-briefcase icon" style="font-size: 28px;"></i>
+              <h3>Experience</h3>
+              <p>
+                <span class="italic">4+ Years <br />Web Development</span>
+              </p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-graduation-cap icon" style="font-size: 28px;"></i>
+              <h3>Education</h3>
+              <p>
+                Pursuing B.S. Bachelors Degree<br />University of Maryland<br />CUM
+                GPA: 3.92
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <span style="font-size: 1.15rem;">&#x1F44B;</span> Hi, my name is Sachin Naraparaju! I am currently pursuing a
+              Bachelor's of Science in Computer Science with a minor in
+              Philosophy and Business Analytics at the University of Maryland,
+              College Park. I'm a full-stack developer with a passion for
+              creating websites. <br /><br />In my free time I enjoy playing
+              sports like basketball, spending time with my family and dog, and
+              working out.
+            </p>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow icon"
+        onclick="location.href='./#experience'"
+      ></i>
+    </section>
+    <section id="experience">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/html.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/css.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <!-- <p>Experienced</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/react.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/MongoDB.svg"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/NodeJS.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/SQL.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/Git-Icon.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/python_icon.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/java_icon.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/C_icon.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/ocaml_icon.png"
+                  alt="Experience icon"
+                  class="icon hover-icon"
+                />
+                <div>
+                  <h3>Ocaml</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow icon"
+        onclick="location.href='./#projects'"
+      ></i>
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Source Code
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./project1.html'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Source Code
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./project2.html'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Source Code
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./project3.html'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow icon"
+        onclick="location.href='./#contact'"
+      ></i>
+    </section>
+
+    <section id="contact">
+      <div class="contact-box">
+        <div class="contact-info">
+          <h3 class="contact-title">Get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            rerum odio incidunt doslorum officia dolorem eaque aprim?
+          </p>
+          <div class="information-wrap">
+            <!-- Location Icon 1 -->
+            <div class="information">
+              <div class="contact-icon hover-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p class="info-text">33 Carrie Drive Marlboro, NJ 07746</p>
+            </div>
+
+            <!-- Gmail Icon -->
+            <div class="information">
+              <div class="contact-icon hover-icon">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <p class="info-text">sachinnarap@gmail.com<br />snarap@terpmail.umd.edu
+              </p>
+            </div>
+
+            <!-- Phone Number Icon -->
+            <div class="information">
+              <div class="contact-icon hover-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <p class="info-text">908-770-8363</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Right Side -->
+        <div class="contact-form">
+          <h3 class="contact-title">Contact me</h3>
+          <div class="row">
+            <input
+              type="text"
+              class="contact-input"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              class="contact-input"
+              id="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+
+          <div class="row">
+            <input
+              type="text"
+              class="contact-input"
+              id="phone-number"
+              placeholder="Phone"
+            />
+            <input
+              type="email"
+              class="contact-input"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="row">
+            <textarea
+              name="message"
+              class="contact-input textarea"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button
+            id="contact-button"
+            class="btn btn-color-1"
+            onclick="submitForm();"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section> -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        &#169; Copyright 2023. Made by Sachin Naraparaju
+      </p>
+    </footer>
+    <script src="../js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </body>
+</html>
