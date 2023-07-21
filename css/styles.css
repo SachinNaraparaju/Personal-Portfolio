@@ -300,20 +300,42 @@ section.dark {
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
+
+.btn-color-1.dark,
+.btn-color-2.dark {
+  border: rgba(255, 255, 255,0.3) 0.1rem solid;
+  color: white;
+}
+
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
 }
+
 .btn-color-1,
 .btn-color-2:hover {
   background-color: rgb(53, 53, 53);
-  background-color: #003f88;
+  /* background-color: #003f88; */
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
+.btn-color-1.dark,
+.btn-color-2.dark:hover {
+  /* background-color: rgb(53, 53, 53); */
+  background-color: #003f88;
 }
+
+.btn-color-1:hover {
+  background-color: #000000;
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-color-1.dark:hover {
+  background-color: #03045e;
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
 .btn-color-2 {
   background: none;
 }
@@ -364,6 +386,11 @@ section.dark {
     transform: translateY(26px);
   }
 }
+.underline-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* About Section */
 
 #about {
@@ -403,7 +430,7 @@ section.dark {
   flex: 1;
   background: #fff;
   /* border-radius: 2rem; */
-  border-radius: 10px;
+  border-radius: 12px;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
@@ -541,7 +568,7 @@ article .icon {
 .contact-box {
   background-color: white;
   height: fit-content;
-  border-radius: 45px;
+  border-radius: 12px;
   padding: 5.5rem 4.5rem;
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -551,6 +578,10 @@ article .icon {
 .contact-box.dark {
   background-color: #464646;
   border: none;
+  box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.7),
+  1px 2px 4px 0px rgba(255,255,255,0.7),
+  2px 4px 8px 0px rgba(255,255,255,0.7),
+  2px 4px 16px 0px rgba(255,255,255,0.7);
 }
 
 .contact-title {
