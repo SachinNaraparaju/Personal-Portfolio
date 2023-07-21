@@ -147,7 +147,6 @@
 @media screen and (max-width: 500px) {
   #profile.dark {
     background-image: none;
-    /* background-color: black; */
   }
   #contact {
     display: flex;
