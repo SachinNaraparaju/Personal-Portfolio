@@ -484,7 +484,8 @@
 
         <!-- Contact Right Side -->
         <div class="contact-form">
-          <form name="contact" method="POST" data-netlify="true" onsubmit="submit">
+          <form name="contact" method="POST" data-netlify="true" onsubmit="submit" data-netlify-honeypot="bot-field">
+            <input style="display: none" type="bot-field">
             <h3 class="contact-title">Contact me</h3>
             <div class="row">
               <input
