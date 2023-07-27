@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Poppins',sans-serif;
 }
 
 html {
@@ -221,9 +221,6 @@ section.dark {
   margin-top: 0vh;
   /* background-color: #e6ccb2; */
   background-image: url("../assets/minimalist-tectured.jpg");
-  /* background-image: url("../assets/profile-page-background.png"); */
-  /* background-image: url("../assets/flower-background.jpg"); */
-  /* background-image: url("../assets/botanical_background.jpg"); */
   background-repeat: none;
   background-attachment: fixed;
   background-size: cover;
@@ -548,9 +545,6 @@ article .icon {
 #contact {
   padding-bottom: 20vh;
   background-image: url("../assets/minimalist-tectured.jpg");
-  /* background-image: url("../assets/profile-page-background.png"); */
-  /* background-image: url("../assets/flower-background.jpg"); */
-  /* background-image: url("../assets/botanical_background.jpg"); */
   background-repeat: none;
   background-attachment: fixed;
   background-size: cover;
@@ -558,12 +552,6 @@ article .icon {
 #contact.dark {
   background-image: url("../assets/dark-wallpaper2.jpg");
 }
-
-/* .contact-container {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-} */
 
 .contact-box {
   background-color: white;
@@ -681,49 +669,11 @@ article .icon {
 }
 /* CONTACT */
 
-/* #contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-} */
-
 /* FOOTER SECTION */
 
 footer {
   background-color: #fff;
-  height: 26vh;
+  height: 20vh;
 }
 
 footer.dark {
