@@ -81,6 +81,10 @@
   top: 0;
 }
 
+.numbertext.dark {
+  color: black;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

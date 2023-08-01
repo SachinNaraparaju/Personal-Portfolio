@@ -374,6 +374,14 @@ section.dark {
   animation-name: scroll;
 }
 
+.icon-scroll.dark {
+  box-shadow: inset 0 0 0 2px #ccc;
+}
+
+.icon-scroll.dark:before {
+  background: #ccc;
+}
+
 @keyframes scroll {
   0% {
     opacity: 1;

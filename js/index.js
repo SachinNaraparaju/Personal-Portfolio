@@ -27,6 +27,7 @@ function darkToggle() {
     $(".details-container").addClass("dark");
     $("button").addClass("dark");
     $("footer").addClass("dark");
+    $(".icon-scroll").addClass("dark");
     document.getElementById(
       "ham-dark-toggle"
     ).innerHTML = `<img src="./assets/sun_icon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
@@ -52,6 +53,7 @@ function darkToggle() {
     $(".details-container").removeClass("dark");
     $("button").removeClass("dark");
     $("footer").removeClass("dark");
+    $(".icon-scroll").removeClass("dark");
     document.getElementById(
       "ham-dark-toggle"
     ).innerHTML = `<img src="./assets/moon.png" alt="icon" class="icon hover-icon" style="height: 1.75rem">`;
